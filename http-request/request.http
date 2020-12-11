@@ -1,0 +1,311 @@
+#CourseService
+
+GET http://0.0.0.0:8080/courseService/course
+Content-Type: text/plain
+
+
+###
+
+
+POST http://0.0.0.0:8080/courseService/newKurs
+Content-Type: application/json
+
+[
+  {
+    "name": "Anfänger14-12-2020",
+    "aclass": 3
+  },
+  {
+    "name": "Anfänger05-01-2021",
+    "aclass": 3
+  }
+]
+
+
+###
+
+
+POST http://0.0.0.0:8080/courseService/newKurs
+Content-Type: application/json
+
+[
+  {
+    "name": "Anfänger14-12-2020",
+    "aclass": 3
+  }
+]
+
+
+###
+
+
+DELETE http://0.0.0.0:8080/courseService/deleteCourse
+Content-Type: application/json
+
+[
+  {
+    "name": "Anfänger05-01-2021"
+  }
+]
+
+
+###
+
+
+DELETE http://0.0.0.0:8080/courseService/deleteCourse
+Content-Type: application/json
+
+[
+  {
+    "name": "Anfänger05-01-2021"
+  },
+  {
+  "name": "Koenner05-01-2021"
+  }
+]
+
+
+###
+
+
+GET http://0.0.0.0:8080/courseService/findCourse
+Content-Type: application/json
+
+[
+  {
+    "name": "Anfänger05-01-2021"
+  }
+]
+
+
+
+###
+
+
+
+#GET http://0.0.0.0:8080/courseService/findCourse
+#Content-Type: application/json
+#
+#[
+#  {
+#    "name": "Anfänger05-01-2021"
+#  },
+#  {
+#    "name": "Koenner05-01-2021"
+#  }
+#]
+
+
+###
+
+
+#SkiStudentService
+
+
+GET http://0.0.0.0:8080/skistudentService/skiStudent
+Content-Type: text/plain
+
+
+###
+
+
+POST http://0.0.0.0:8080/skistudentService/newSkistudent
+Content-Type: application/json
+
+[
+  {
+    "firstname": "Vanessa",
+    "lastname": "P",
+    "age": 8,
+    "course": "Anfänger05-01-2021"
+  },
+  {
+    "firstname": "Sarah",
+    "lastname": "F",
+    "age": 6,
+    "course": "Anfänger05-01-2021"
+  }
+]
+
+
+###
+
+
+POST http://0.0.0.0:8080/skistudentService/newSkistudent
+Content-Type: application/json
+
+[
+  {
+    "firstname": "Vanessa",
+    "lastname": "P",
+    "age": 8,
+    "course": "Anfänger05-01-2021"
+  }
+]
+
+
+###
+
+
+POST http://0.0.0.0:8080/skistudentService/newSkistudent
+Content-Type: application/json
+
+[
+  {
+
+    "firstname": "Jonas",
+    "lastname": "Müller",
+    "age": 11,
+    "course": "Anfänger05-01-2021"
+  },
+  {
+    "firstname": "Vanessa",
+    "lastname": "P",
+    "age": 8,
+    "course": "Anfänger05-01-2021"
+  }
+]
+
+
+###
+
+
+DELETE http://0.0.0.0:8080/skistudentService/skiStudentDelete
+Content-Type: application/json
+
+[
+  {
+    "id": 1
+  },
+  {
+    "id": 0
+  }
+]
+
+
+###
+
+
+#GET http://0.0.0.0:8080/skistudentService/findSkistudent
+#Content-Type: application/json
+#
+#[
+#  {
+#    "id": 0
+#  },
+#  {
+#    "id": 2
+#  }
+#]
+
+
+###
+
+
+GET http://0.0.0.0:8080/skistudentService/findSkistudent
+Content-Type: application/json
+
+[
+  {
+    "id": 1
+  }
+]
+
+
+###
+
+
+#SkiTeacherService
+
+
+GET http://0.0.0.0:8080/skiteacherService/skiTeacher
+Content-Type: text/plain
+
+
+###
+
+
+POST http://0.0.0.0:8080/skiteacherService/newSkiTeacher
+Content-Type: application/json
+
+[
+  {
+    "firstname": "Vanessa",
+    "lastname": "P",
+    "age": 22,
+    "course": "Anfänger05-01-2021",
+    "salary": 1200
+  }
+]
+
+
+###
+
+
+POST http://0.0.0.0:8080/skiteacherService/newSkiTeacher
+Content-Type: application/json
+
+[
+  {
+    "firstname": "Vanessa",
+    "lastname": "P",
+    "age": 22,
+    "course": "Anfänger05-01-2021",
+    "salary": 1200
+  },
+  {
+    "firstname": "Jonas",
+    "lastname": "Fuchs",
+    "age": 20,
+    "course": "Anfänger05-01-2021",
+    "salary": 1200
+  }
+]
+
+
+###
+
+
+DELETE http://0.0.0.0:8080/skiteacherService/deleteSkiteacher
+Content-Type: application/json
+
+[
+  {
+    "id": 1
+  },
+  {
+    "id": 0
+  }
+]
+
+
+###
+
+
+#GET http://0.0.0.0:8080/skiteacherService/findSkiteacher
+#Content-Type: application/json
+#
+#[
+#  {
+#    "id": 0
+#  },
+#  {
+#    "id": 2
+#  }
+#]
+
+
+###
+
+
+GET http://0.0.0.0:8080/skiteacherService/findSkiteacher
+Content-Type: application/json
+
+[
+  {
+    "id": 1
+  }
+]
+
+###
+
